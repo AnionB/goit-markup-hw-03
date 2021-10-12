@@ -1,0 +1,140 @@
+:root {
+  --logo-color: #000000;
+  --brand-color: #2196f3;
+  --title-color: #212121;
+  --text-color: #757575;
+  --text-footer-color: #ffffff;
+  --background-color: #ffffff;
+  --alt-background-color: #f5f4fa;
+}
+body {
+  font-family: roboto, sans-serif;
+  color: var(--text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--background-color);
+}
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+}
+.link {
+  text-decoration: none;
+}
+.logo {
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--logo-color);
+}
+.logo-part {
+  color: var(--brand-color);
+}
+.list {
+  list-style-type: none;
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--brand-color);
+}
+.current-page {
+  color: var(--brand-color);
+}
+/* Main */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--text-footer-color);
+  background-color: var(--brand-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+  cursor: pointer;
+}
+.advantage-title-item {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.advantage-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+}
+.employee {
+  background-color: var(--alt-background-color);
+  line-height: 1.19;
+}
+.employee-name {
+  font-weight: 500;
+  font-size: 16px;
+}
+.employee-position {
+  font-weight: normal;
+  font-size: 16px;
+
+  color: #757575;
+}
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  background: var(--alt-background-color);
+  cursor: pointer;
+}
+.filter-button:focus,
+.filter-button:hover {
+  background: var(--brand-color);
+  color: #ffffff;
+}
+
+.project-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-type {
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
+}
+/* Footer */
+footer {
+  background-color: #2f303a;
+}
+.adr {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--text-footer-color);
+}
+.footer {
+  color: #ffffff;
+}
+.contact {
+  color: rgba(255, 255, 255, 0.6);
+}
