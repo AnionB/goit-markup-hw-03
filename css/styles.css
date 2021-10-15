@@ -3,9 +3,11 @@
   --brand-color: #2196f3;
   --title-color: #212121;
   --text-color: #757575;
-  --text-footer-color: #ffffff;
+  --text-alt-color: #ffffff;
   --background-color: #ffffff;
   --alt-background-color: #f5f4fa;
+  --dark-background-color: #2f303a;
+  --header-border-color: #ececec;
 }
 .visually-hidden {
   position: absolute;
@@ -62,30 +64,34 @@ img {
 }
 
 /* Header */
-
+header {
+  border-bottom: 1px solid var(--header-border-color);
+}
 .logo {
-  margin-right: 93px;
-
   font-family: raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: var(--logo-color);
 }
+
 .logo-part {
   color: var(--brand-color);
 }
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .nav-list {
   display: flex;
+  align-items: center;
 }
 .nav-list .item:not(:last-child) {
   margin-right: 50px;
+}
+.nav-list .item:first-child {
+  margin-right: 93px;
 }
 .adr-list {
   display: flex;
@@ -117,7 +123,10 @@ img {
 /* Main */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
+  background-color: var(--dark-background-color);
 }
 .hero-title {
   margin-bottom: 30px;
@@ -127,13 +136,15 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--text-alt-color);
 }
 .hero-button {
+  padding: 0 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--text-footer-color);
+  color: var(--text-alt-color);
   background-color: var(--brand-color);
   border-color: transparent;
   border-radius: 4px;
@@ -240,16 +251,19 @@ img {
   background: var(--brand-color);
   color: #ffffff;
 }
-
+.item-description {
+  margin: 20px 24px;
+  /* margin-top: 20px; */
+}
 .project-title {
-  margin-left: 24px;
-  margin-top: 20px;
+  /* margin-left: 24px;
+  margin-top: 20px; */
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .project-type {
-  margin-left: 24px;
+  /* margin-left: 24px; */
   margin-top: 4px;
   font-size: 16px;
   line-height: 1.87;
@@ -258,20 +272,18 @@ img {
 
 /* Footer */
 footer {
-  background-color: #2f303a;
+  background-color: var(--dark-background-color);
+  padding: 60px 0;
 }
-.footer-adr {
-  padding-top: 60px;
-}
+
 .adr {
   margin-top: 20px;
-  padding-bottom: 60px;
 
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--text-footer-color);
+  color: var(--text-alt-color);
 }
 .adr .item.item:not(:last-child) {
   margin-bottom: 9px;
